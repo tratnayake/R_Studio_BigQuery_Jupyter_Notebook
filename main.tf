@@ -57,6 +57,7 @@ resource "google_service_account_iam_binding" "analyst_notebook_service_account_
   role               = "roles/iam.serviceAccountUser"
 
   members = [
+    #CHANGEME - who should have access to assume the Service Account (and access the Notebook)
     "user:thilina.ratnayake1@gmail.com",
   ]
 }
